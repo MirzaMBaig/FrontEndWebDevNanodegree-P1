@@ -1,5 +1,5 @@
 * {
-	border: 1px solid red !important;
+	#border: 1px solid red !important;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -35,16 +35,42 @@
 	}
 }
 
-
+h2{
+    font: inherit;
+    font-size: 2em;
+    font-weight: 100;
+}
 .grid {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 960px;
 	width:100%
 }
 .row {
 	width: 100%;
 	margin-bottom:20px;
 	display: flex;
+}
+
+.header-inside-row {
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px;
+}
+
+.content-image-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px;
+    padding-right: 5%;
+}
+
+.content-inside-row {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
 }
 .col-1 {
 	width: 8.33%;
@@ -62,7 +88,11 @@
 	width:41.66%
 }
 .col-6 {
-	width:50%
+    width:50%;
+}
+.col-6-right {
+	width:50%;
+    text-align: right;
 }
 .col-7 {
 	width:58.33%
@@ -82,3 +112,26 @@
 .col-12 {
 	width:100%
 }
+
+.line {
+    border-top-color: black;
+    border-top: 55px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.ninja-name {
+    text-align: right;
+    font: inherit;
+    font-size: 4em;
+    font-weight: 200;
+}
+
+.ninja-title {
+    text-align: right;
+    font: inherit;
+    font-size: 2em;
+    font-weight: 200;
+}
+
